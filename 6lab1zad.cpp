@@ -19,9 +19,15 @@ int main() {
     
     cout<<"Исходный вектор:"<<endl;
     
+    vector<int> v(n);
     
-    
-    vector<int> v = {7, 3, 1, -5, -2, 5, 2, 0, 10, 9};
+    for (auto& it : v)
+        cin >> it;
+    for(auto& i:v)
+    {
+        cout<<i;
+    }
+
 //вывод вектора
     for (int i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
