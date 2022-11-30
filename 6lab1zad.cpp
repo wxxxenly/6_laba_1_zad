@@ -3,9 +3,24 @@
 using namespace std;
 
 int main() {
+    
+    int n,v_min,v_max;
+    cout<<"Входные данные:"<<endl;
+    cout<<"n=";
+    cin>>n;
+    cout<<"v_min=";
+    cin>>v_min;
+    cout<<"v_max=";
+    cin>>v_max;
+    cout<<endl;
+    
     int index, num, index2, num2;
     int c = 2;
-
+    
+    cout<<"Исходный вектор:"<<endl;
+    
+    
+    
     vector<int> v = {7, 3, 1, -5, -2, 5, 2, 0, 10, 9};
 //вывод вектора
     for (int i = 0; i < v.size(); i++) {
@@ -24,8 +39,7 @@ int main() {
             }
         }
    }
-    cout<<endl<<index;
-    cout<<endl<<num;
+    cout<<endl<<endl<<"Выходные данные: "<<endl<<"n_second_otr="<<index + 1<<" "<<"second_otr="<<num;
     int len = v.size();
 //находит индекс предпоследнего положительного числа и само это число 
     for (int sc1 = 0; sc1 < v.size() - 1; sc1++){
@@ -40,12 +54,11 @@ int main() {
             }
         }
     }
-    cout<<endl<<index2;
-    cout<<endl<<num2<<endl;
-
+    cout<<endl<<"n_predp_pol="<<index2 + 1<<" "<<"predp_pol="<<num2<<endl;
     v[index] = num2;
     v[index2] = num;
 //вывод вектора   
+    cout<<endl<<"Выходной вектор: "<<endl;
     for (int i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
     }
